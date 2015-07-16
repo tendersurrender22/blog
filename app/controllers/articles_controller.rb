@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
-
+  	layout 'ejemplo'
+  	
 	#http_basic_authenticate_with name: "fer", password: "1234", except: [:index, :show]
 	before_action :authenticate_user!, only: [:new, :create, :edit, :update]
 	
